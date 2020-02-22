@@ -1,0 +1,47 @@
+.btn
+	color: $text-color-light
+	background-color: $bg-button
+	font-family: "Roboto", sans-serif
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 500
+	line-height: 22px
+	text-decoration: none
+	cursor: poitner
+	outline: none
+	border: 0 solid transparent
+	&:hover
+		background-color: #fbaf51
+	
+
+
+.slider-arrow
+	position: absolute
+	top: 0
+	z-index: 99
+	height: 75px
+	width: 22px
+	border: 1px solid $bg-button
+	cursor: pointer
+	&__right
+		right: 0
+		background: url("../img/arrow-right.png") center no-repeat
+		&:hover
+			background: $bg-button url("../img/arrow-right-activ.png") center no-repeat
+	&__left
+		left: 0
+		background: url("../img/arrow-left.png") center no-repeat
+		&:hover
+			background: $bg-button url("../img/arrow-left-activ.png") center no-repeat
+
+	&__feedback-right
+		top: 40%
+		border: none
+		right: 0
+		background: url("../img/arrow-right-feed.png") center no-repeat
+
+	&__feedback-left
+		top: 40%
+		border: none
+		left: 0
+		background: url("../img/arrow-left-feed.png") center no-repeat

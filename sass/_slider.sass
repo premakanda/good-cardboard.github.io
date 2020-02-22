@@ -1,0 +1,64 @@
+.slider
+	padding-top: 87px
+	&-production__top
+		margin-bottom: 13px
+		height: 380px
+		overflow-y: hidden
+	
+		
+	&-production__bottom
+		height: 78px
+		padding-left: 30px
+		padding-right: 30px
+		overflow-y: hidden
+	
+		img
+			display: block
+			margin: 0 6px
+
+
+		.slick-active 
+			filter: brightness(50%)
+			outline: none
+
+		.slick-current 
+			filter: brightness(100%)
+
+		.slick-active::before
+			content: ''
+			display: block
+			position: absolute
+			width: 107px
+			height: 78px
+			background-color: rgba(0,0,0,0.5)
+			border: none
+			z-index: 5
+			
+
+		.slick-current::before
+			background-color: rgba(0,0,0,0.0)
+			
+.slider
+	&-text
+		&__title
+			margin: 0
+			margin-top: 20px
+			margin-bottom: 25px
+			color: #ffffff
+			font-size: 28px
+			line-height: 30px
+			font-weight: 500
+			width: 100%
+			padding: 16px 28px
+			background-color: #ff8d00
+			transform: translateX(-30px)
+		&__discription
+			margin: 0
+			margin-bottom: 10px
+			font-size: 16px
+			line-height: 24px
+			font-weight: 300
+			color: #373737
+.mobile
+	display: none
+

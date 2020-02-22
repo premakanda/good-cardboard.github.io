@@ -1,0 +1,156 @@
+.main-header
+	background-color: $text-color-light
+	padding-bottom: 15px
+	padding-top: 58px
+
+	&-logo
+		background: url("../img/main-logo.png") center no-repeat
+		width: 191px
+		height: 61px 
+
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		flex-wrap: wrap
+		align-items: center
+		&__phone
+			margin: 0
+			font-size: 22px
+			line-height: 34px
+			text-decoration: none
+			color: #373737
+			&:hover
+				color: $bg-button
+			&:first-child 
+				border-right: 1px solid #eeeeee
+				padding-right: 15px
+				margin-right: 15px
+		&__button 
+			position: relative
+			padding-right: 22px
+			padding-left: 47px
+			padding-top: 13px
+			padding-bottom: 13px
+			margin-left: 27px
+			outline: none
+			
+			&::before
+				content: ""
+				position: absolute
+				background-image: url("../img/phone.png")
+				background-repeat: no repeat
+				width: 20px
+				height: 20px
+				top: 13px
+				left: 13px
+		
+
+.menu
+	position: fixed
+	text-align: center
+	width: 100%
+	top: 0
+	z-index: 10000
+	
+	transition: all 0.5s
+	margin-bottom: 15px
+	background-color: #373737
+	&-nav
+		list-style: none
+		margin: 0
+		padding: 0
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		min-height: 45px
+		align-items: center
+
+		&__item
+			
+			&-link
+				text-decoration: none
+				color: #ffffff
+				font-size: 12px
+				line-height: 25px
+				text-transform: uppercase
+				padding: 0 10px
+				border-right: 1px dotted #ffffff
+				&:first-child
+					padding-left: 0
+				&--last
+					padding-right: 0
+					border-right: none
+				&:hover
+					color: #ff8d00
+
+.menu-link
+	
+
+
+	position: fixed
+	display: block
+	width: 32px
+	height: 32px
+	top: 10px
+	left: 18px
+	
+	padding: 2px
+	z-index: 99
+	background-color: #fff
+	border-radius: 50px
+
+	&__burg
+		display: block
+		height: 3px
+		width: 22px
+		position: absolute
+		left: 47%
+		margin-left: -10px
+		top: 47%
+		margin-top: -1.5px
+		background-color: #333
+
+    
+	&__burg::before
+		content: ''
+		transition: all 0.2s
+		height: 3px
+		width: 22px
+		position: absolute
+		left: 50%
+		margin-left: -11px
+		top: 50%
+		margin-top: -1px
+		background-color: #333
+		margin-top: -9px
+
+
+    
+
+	&__burg::after
+		content: ''
+		transition: all 0.2s
+		height: 3px
+		width: 22px
+		position: absolute
+		left: 50%
+		margin-left: -11px
+		top: 50%
+		margin-top: -6px
+		background-color: #333
+		margin-top: 6px
+
+	&__active .menu-link__burg 
+		background-color: transparent
+		&::before
+			transform: rotate(135deg)
+			margin-top: 0
+
+		&::after
+			transform: rotate(-135deg)
+			margin-top: 0
+
+
+
+
+
